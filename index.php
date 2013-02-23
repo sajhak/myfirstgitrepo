@@ -11,6 +11,6 @@
  //
  // wake up !
  echo date('h:i:s') . "\n";
-?> 
+    ?> 
  </body>
 </html>
