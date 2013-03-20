@@ -15,9 +15,6 @@ if ($fname == "")
 if ($lname == "")
 {$lname = '%';}
 
-print $fname;
-print $lname;
-
 $result = mysql_query ("SELECT * FROM identity   
     WHERE fname LIKE '$fname%'
         AND lname LIKE '$lname%'
@@ -29,6 +26,8 @@ if ($row = mysql_fetch_array($result)) {
             print $row["fname"];
                 print (" ");
                 print $row["lname"];
+                print (" ");
+                print $row["id"];
                     print("<p>");
     } while($row = mysql_fetch_array($result));
 } else {print "Sorry, no records were found!";
