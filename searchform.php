@@ -15,6 +15,9 @@ if ($fname == "")
 if ($lname == "")
 {$lname = '%';}
 
+print $fname;
+print $lname;
+
 $result = mysql_query ("SELECT * FROM identity   
     WHERE fname LIKE '$fname%'
         AND lname LIKE '$lname%'
