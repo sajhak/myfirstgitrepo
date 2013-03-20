@@ -3,14 +3,11 @@
 
 <?php
 
-print $fname;
-print $lname;
-
-mysql_connect ('10.33.16.70:3306', 'root', 'dkmdxtif');
+mysql_connect ('10.33.16.70', 'root', 'dkmdxtif');
 
 mysql_select_db ('test');
-$fname = '';
-$lname = '';
+$fname = $_GET["fname"];
+$lname = $_GET["lname"];
     
 if ($fname == "")
 {$fname = '%';}
