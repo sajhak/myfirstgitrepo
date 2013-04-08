@@ -3,7 +3,7 @@
 
 <?php
 
-mysql_connect ('10.33.16.81', 'root', 'xnlgqzel');
+mysql_connect ('10.33.16.61', 'root', 'mfhncolz');
 
 mysql_select_db ('test');
 $fname = $_GET["fname"];
